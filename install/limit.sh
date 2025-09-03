@@ -1,5 +1,5 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/bakulsc/os/main/"
+REPO="https://raw.githubusercontent.com/gogoyeee00-bit/os/main/"
 wget -q -O /usr/bin/limit-ip "${REPO}install/limit-ip"
 chmod +x /usr/bin/*
 cd /usr/bin

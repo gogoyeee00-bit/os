@@ -31,10 +31,6 @@ if [ "${EUID}" -ne 0 ]; then print_error "Skrip ini harus dijalankan sebagai roo
 if [ "$(systemd-detect-virt)" == "openvz" ]; then print_error "OpenVZ tidak didukung."; fi
 
 # --- BANNER & INPUT PENGGUNA ---
-echo -e "$green  ____ ____ ____ _  _ ____ _  _    _  _ ____ _  _ ____ _  _ ____ $NC"
-echo -e "$green  | __ |___ |__/ |\\/| |__| |\\ |    |\\/| |  | |\\ | |___ |\\/| |___ $NC"
-echo -e "$green  |__] |___ |  \\ |  | |  | | \\|    |  | |__| | \\| |___ |  | |___ $NC"
-echo -e "$green                                                                $NC"
 echo -e "$green    ♥ TERIMA KASIH TELAH MEMAKAI SCRIPT BZ VPN STORE ♥$NC"
 sleep 3; clear
 

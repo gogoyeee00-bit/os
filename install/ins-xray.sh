@@ -11,7 +11,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-REPO="https://raw.githubusercontent.com/bakulsc/os/main/"
+REPO="https://raw.githubusercontent.com/gogoyeee00-bit/os/main/"
 echo -e "
 "
 date
@@ -370,7 +370,7 @@ WantedBy=multi-user.target
 EOF
 cat > /etc/systemd/system/runn.service <<EOF
 [Unit]
-Description=casper9
+Description=gogoyeee00-bit
 After=network.target
 
 [Service]

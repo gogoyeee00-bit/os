@@ -1,9 +1,9 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/bakulsc/os/main/"
+REPO="https://raw.githubusercontent.com/gogoyeee00-bit/os/main/"
 apt install rclone
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}install/rclone.conf"
-git clone  https://github.com/casper9/wondershaper.git
+git clone  https://github.com/gogoyeee00-bit/wondershaper.git
 cd wondershaper
 make install
 cd

@@ -1,13 +1,13 @@
 #!/bin/sh
-REPOS="https://v4.serverpremium.web.id:81/os/"
+REPOS="https://raw.githubusercontent.com/gogoyeee00-bit/os/main/"
 ns_domain_cloudflare() {
 	DOMAIN=$(cat /etc/xray/domain | cut -d "." -f2-4)
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(cat /etc/xray/domain | cut -d "." -f1)
 	SUB_DOMAIN=${SUB}."${DOMAIN}"
 	NS_DOMAIN=ns-${SUB_DOMAIN}
-	CF_ID= Ridwanstoreaws@gmail.com
-        CF_KEY=4ecfe9035f4e6e60829e519bd5ee17d66954f
+	CF_ID= bzofficial67@gmail.com
+        CF_KEY=6e60b8b278881b643c13e4f53c8b4ba0a23c5
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."

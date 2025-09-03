@@ -6,14 +6,14 @@ WH='\033[1;37m'
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/bakulsc/izinvps/main/ip"
+data_ip="https://raw.githubusercontent.com/gogoyeee00-bit/izinvps/main/ip"
 checking_sc() {
     useexp=$(curl -sS "$data_ip" | grep "$ipsaya" | awk '{print $3}')
     date_list=$(date +%Y-%m-%d)
 
     if [[ $(date -d "$date_list" +%s) -lt $(date -d "$useexp" +%s) ]]; then
         echo -e " [INFO] Fetching server version..."
-        REPO="https://raw.githubusercontent.com/bakulsc/os/main/" # Ganti dengan URL repository Anda
+        REPO="https://raw.githubusercontent.com/gogoyeee00-bit/os/main/"
         serverV=$(curl -sS ${REPO}versi)
 
         if [[ -f /opt/.ver ]]; then
@@ -27,7 +27,7 @@ checking_sc() {
             return
         else
             echo -e " [INFO] Versi script berbeda. Memulai proses update script..."
-            wget -q https://raw.githubusercontent.com/bakulsc/os/main/menu/update.sh -O update.sh
+            wget -q https://raw.githubusercontent.com/gogoyeee00-bit/os/main/menu/update.sh -O update.sh
             chmod +x update.sh
             ./update.sh
             echo $serverV > /opt/.ver.local
@@ -55,7 +55,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 */5 * * * * root /usr/bin/detek
 END
 
-wget myrid.my.id/os/install/detek
+wget https://raw.githubusercontent.com/gogoyeee00-bit/os/main/install/detek
 mv detek /usr/bin/detek
 chmod +x /usr/bin/detek
 detek
@@ -67,7 +67,7 @@ echo "Loading Extract and Setup detek" | lolcat
 checking_sc
 cd
 today=$(date -d "0 days" +"%Y-%m-%d")
-Exp2=$(curl -sS https://raw.githubusercontent.com/bakulsc/izinvps/main/ip | grep $ipsaya | awk '{print $3}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/gogoyeee00-bit/izinvps/main/ip | grep $ipsaya | awk '{print $3}')
 d1=$(date -d "$Exp2" +%s)
 d2=$(date -d "$today" +%s)
 certificate=$(( (d1 - d2) / 86400 ))
@@ -94,13 +94,13 @@ systemctl stop nginx
 systemctl start nginx
 fi
 cd
-if [[ -e /usr/bin/kyt ]]; then
-nginx=$( systemctl status kyt | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ -e /usr/bin/bz ]]; then
+nginx=$( systemctl status bz | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
 echo -ne
 else
-systemctl restart kyt
-systemctl start kyt
+systemctl restart bz
+systemctl start bz
 fi
 fi
 ws=$(systemctl status ws | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)

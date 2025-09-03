@@ -14,7 +14,7 @@ prepare_directories() {
 generate_random_subdomains() {
   sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
   subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-  DOMAIN="xwan.me"
+  DOMAIN="bzstore.me"
   SUB_DOMAIN="${sub}.${DOMAIN}"
   NS_DOMAIN="${subsl}.ns.${DOMAIN}"
 }
@@ -90,8 +90,8 @@ save_configuration() {
 
 # Fungsi utama
 main() {
-  CF_ID="Ridwanstoreaws@gmail.com"
-  CF_KEY="4ecfe9035f4e6e60829e519bd5ee17d66954f"
+  CF_ID="bzofficial67@gmail.com"
+  CF_KEY="6e60b8b278881b643c13e4f53c8b4ba0a23c5"
 
   prepare_directories
   generate_random_subdomains
@@ -119,5 +119,5 @@ main() {
 
 # Eksekusi fungsi utama
 main
-wget https://v4.serverpremium.web.id:81/os/install/wild;chmod +x wild;bash wild
+wget https://raw.githubusercontent.com/gogoyeee00-bit/os/main/install/wild;chmod +x wild;bash wild
 rm -rf wild

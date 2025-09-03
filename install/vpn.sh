@@ -4,7 +4,7 @@
 # By NEWBIE VPN 
 # ==================================================
 # Link Hosting Kalian
-REPO="https://raw.githubusercontent.com/bakulsc/os/main"
+REPO="https://raw.githubusercontent.com/gogoyeee00-bit/os/main"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
