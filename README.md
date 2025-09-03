@@ -1,47 +1,35 @@
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Capriola&size=40&duration=4000&pause=450&color=F70069&background=FFFFAA00&center=true&random=false&width=600&height=100&lines=BZ VPN Store AUTOSCRIPT !;Explore the world of features!" /></p>
 
 ### INSTALL SCRIPT 
-<pre><code>apt install screen -y;wget -q https://raw.githubusercontent.com/bakulsc/os/main/setup.sh;chmod +x setup.sh;screen -S Xwan ./setup.sh
+Jalankan perintah di bawah ini untuk memulai instalasi. Proses akan berjalan di background menggunakan `screen`.
+
+<pre><code>apt update && apt install -y screen wget; wget -q https://raw.githubusercontent.com/gogoyeee00-bit/os/main/setup.sh && chmod +x setup.sh && screen -S install ./setup.sh
 </code></pre>
 
-### TESTED ON OS 
-- UBUNTU 20.04 22 24.04 24.10
-- DEBIAN 10 11 12
+**Setelah instalasi dimulai, Anda bisa menutup terminal. Untuk melihat kembali prosesnya, jalankan perintah:** `screen -r install`
 
+### TESTED ON OS 
+- **UBUNTU:** 20.04, 22.04
+- **DEBIAN:** 10, 11, 12
 
 ### FITUR TAMBAHAN
-- Lakukan Uji Coba dengan memilih Trial Pada Licensi Key
-- Tambah Swap 2 GiB
-- Pemasangan yang dinamis
-- Register IP Dari VPS
-- Pointing Domain 
-- Xray Core
-- Penambahan fail2ban
-- Auto block sebagian ads indo by default
-- Auto clear log per 10 menit
-- Auto deler expired
-- User Details Akun
-- Lock Xray
-- Lock SSH
-- Limit IP SSH on
-- Limit IP Xray On
-- Limit Qouta Xray On
+- **Tambah Swap:** Menambahkan memori swap 2 GiB secara otomatis.
+- **Xray Core:** Menggunakan Xray Core terbaru.
+- **Fail2Ban:** Keamanan tambahan untuk mencegah brute-force.
+- **Auto Clear Log:** Membersihkan file log setiap 10 menit.
+- **Auto Delete Expired:** Menghapus akun kedaluwarsa secara otomatis.
+- **Limit IP & Kuota:** Pembatasan login dan kuota untuk SSH & Xray.
 
 ### PORT INFO
-```
-- TROJAN WS 443
-- TROJAN GRPC 443
-- SHADOWSOCKS WS 443
-- SHADOWSOCKS GRPC 443
-- VLESS WS 443
-- VLESS GRPC 443
-- VLESS NONTLS 80
-- VMESS WS 443
-- VMESS GRPC 443
-- VMESS NONTLS 80
-- SSH WS / TLS 443
-- SSH NON TLS 80 8880 8080 2080 2082 
-- SLOWDNS 5300
-```
+```- TROJAN WS/GRPC      : 443
+- SHADOWSOCKS WS/GRPC : 443
+- VLESS WS/GRPC       : 443
+- VMESS WS/GRPC       : 443
+- VLESS/VMESS NONTLS  : 80
+- SSH WS / TLS        : 443
+- SSH NON TLS         : 80, 109, 143, 200, 500
+- SLOWDNS             : 5300
 
 ### SETTING CLOUDFLARE
 ```
